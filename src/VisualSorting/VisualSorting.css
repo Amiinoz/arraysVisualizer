@@ -1,0 +1,10 @@
+.container {
+  position: absolute;
+  left: 80px;
+}
+.arrayLines {
+  width: 2px;
+  background-color: aqua;
+  display: inline-block;
+  margin: 0 1px;
+}
