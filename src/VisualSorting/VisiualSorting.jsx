@@ -1,5 +1,7 @@
 import React from 'react';
+import { ReactComponent as Logo } from '../images/logo.svg';
 import {mergeSortAnimations} from '../AlgoSorting/sortAlgorithms.js';
+
 import './VisualSorting.css';
 
 
@@ -13,7 +15,7 @@ const SECONDARY_COLOR = '#e302f7';
 export default class VisualSorting extends React.Component {
 	constructor(props) {
 		super(props);
-		
+
 		this.state = {
 			array: [],
 		}
@@ -58,8 +60,8 @@ export default class VisualSorting extends React.Component {
       }
     }
   }
-	
-	
+
+
 
 	quickSort(){}
 
@@ -83,19 +85,36 @@ export default class VisualSorting extends React.Component {
 
 		return(
 			<div className="container">
-			
 
+				<div className="appLogo">
+					<a href="/">
+						<Logo />
+					</a>
+				</div>
 
-			{array.map((value, index) => (
-				<div className="arrayLines" key={index} style={{height: `${value}px`}}> 
+				<div className="arrays">
+						{array.map((value, index) => (
+				<div className="arrayLines" key={index} style={{height: `${value}px`}}>
 					</div>
 			))}
+
+				</div>
+
+				<div className= "buttons">
+
 				<button onClick={() => this.resetArray()}>New Array</button>
 				<button onClick={() => this.bubbleSort()}>Bubble Sort</button>
 				<button onClick={() => this.heapSort()}>Heap Sort</button>
 				<button onClick={() => this.mergeSort()}>Merge Sort</button>
 				<button onClick={() => this.quickSort()}>Quick Sort</button>
-				<button onClick={() => this.testAlgor()}>Algorithms Test</button>
+
+				</div>
+
+
+
+
+
+
 			</div>
 		)
 	}

@@ -1,10 +1,30 @@
-.container {
-  position: absolute;
-  left: 80px;
+* {
+  background-color: #5cdb95;
 }
+
+/* .container {
+  position: relative;
+  left: 80px;
+} */
 .arrayLines {
   width: 2px;
   background-color: aqua;
   display: inline-block;
   margin: 0 1px;
+  background-color: white;
+}
+.app {
+  .container {
+    height: 95vh;
+    .appLogo {
+      svg {
+        width: 90px;
+      }
+    }
+    .arrays {
+      background-color: white;
+    }
+    .buttons {
+    }
+  }
 }

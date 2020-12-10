@@ -1,9 +1,36 @@
+/* Color variables */
+
+$back__ground: #5cdb95;
+$logo__buttons: #05386b;
+$accent__one: #379683;
+$accent__two: #379683;
+$text__color: #edf5e1;
+
+/* arrays colors */
+
+$buble__one: #f8e9a1;
+$buble__two: #a8d0e6;
+
+$heap__one: #f76c6c;
+$heap__two: #374785;
+
+$merge__one: #fccd04;
+$merge__two: #a64ac9;
+
+$quick__one: #f5e6cc;
+$quick__two: #17e9e0;
+
 .App {
   text-align: center;
+
+  background-color: #5cdb95;
+  height: 50vh;
+}
+.container {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 45px;
   pointer-events: none;
 }
 
