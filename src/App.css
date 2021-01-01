@@ -20,13 +20,13 @@ $merge__two: #a64ac9;
 $quick__one: #f5e6cc;
 $quick__two: #17e9e0;
 
-.App {
+/* .App {
   text-align: center;
 
   background-color: #5cdb95;
-  height: 50vh;
-}
-.container {
+  height: 100vh;
+} */
+/* .container {
 }
 
 .App-logo {
@@ -62,4 +62,4 @@ $quick__two: #17e9e0;
   to {
     transform: rotate(360deg);
   }
-}
+} */
